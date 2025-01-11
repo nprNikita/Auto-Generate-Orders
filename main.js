@@ -1,3 +1,3 @@
 let file = document.getElementById("file");
-let par = document.getElementById("par");
-par.innerHTML = file.value;
+let img = document.getElementById("img")
+img.src = file.value
