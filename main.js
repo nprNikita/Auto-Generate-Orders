@@ -5,9 +5,11 @@ form.addEventListener("submit", async event => {
 
     formData.append("CustomField", "This is some extra data");
 
-    const response = await fetch("stash.php", {
+    const response = await fetch("second.html", {
         method: "POST",
         body: formData
     });
     event.preventDefault();
+    console.log(response);
 });
+console.log(response)
