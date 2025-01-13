@@ -1,13 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <title>Autoorder</title>
     </head>
     <body>
-        <form id="form" action="/second.html" onsubmit="submit()">
-            <input id="input" type="file" />
-            <input type="submit">
-        </form>
+        <form enctype="multipart/form-data" method="post" name="fileinfo" id="fileinfo">
+  <p>
+    <label
+      >Your email address:
+      <input
+        type="email"
+        autocomplete="on"
+        name="userid"
+        placeholder="email"
+        required
+        size="32"
+        maxlength="64" />
+    </label>
+  </p>
+  <p>
+    <label
+      >Custom file label:
+      <input type="text" name="file-label" size="12" maxlength="32" />
+    </label>
+  </p>
+  <p>
+    <label
+      >File to stash:
+      <input type="file" name="file" required />
+    </label>
+  </p>
+  <p>
+    <input type="submit" value="Stash the file!" />
+  </p>
+</form>
+
         <script src="main.js"></script>
     </body>
 </html>
